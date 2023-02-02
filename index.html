@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript program to add two numbers</title>
+    <script>
+      function addNumbers() {
+        var first = parseInt(document.getElementById("firstNumber").value);
+        var second = parseInt(document.getElementById("secondNumber").value);
+        var result = first + second;
+        document.getElementById("result").innerHTML = "The sum of the two numbers is: " + result;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>JavaScript program to add two numbers</h2>
+    <form>
+      First Number: <input type="text" id="firstNumber"><br><br>
+      Second Number: <input type="text" id="secondNumber"><br><br>
+      <input type="button" value="Add Numbers" onclick="addNumbers()">
+    </form>
+    <p id="result"></p>
+    
+  </body>
+</html>
